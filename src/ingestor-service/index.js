@@ -107,9 +107,10 @@ app.get("/api/neo/feed", async (req, res) => {
   });
   try {
     const data = await nasaClient.fetchKpWindow(
-      (startDate = data),
-      (endDate = data),
-      (endpoint = `neo/rest/v1/feed`),
+      date,
+      date,
+      0,
+      `neo/rest/v1/feed`,
     );
     res.json(data);
   } catch (error) {

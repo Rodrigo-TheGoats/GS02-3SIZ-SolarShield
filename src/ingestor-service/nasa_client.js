@@ -21,8 +21,8 @@ class NasaClientWithRetry {
       );
 
       const params = { api_key: this.apiKey };
-      if (startDate != null) params.start_date = startDate;
-      if (endDate != null) params.end_date = endDate;
+      if (startDate != null) params.startDate = startDate;
+      if (endDate != null) params.endDate = endDate;
 
       const response = await axios.get(`${this.baseURL}/${endpoint}`, {
         params,

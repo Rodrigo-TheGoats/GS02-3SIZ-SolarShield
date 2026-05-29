@@ -6,7 +6,7 @@
 
 - Thiago Luiz Pereira 553720 -> responsável: notifier + idempotencia
 
-- Felipe Lima Bonato Testa  553780 -> responsável: testes + k6 + docker-compose
+- Felipe Lima Bonato Testa 553780 -> responsável: testes + k6 + docker-compose
 
 ## Visão geral
 
@@ -80,16 +80,18 @@ Também é necessário ter Redis e RabbitMQ em execução localmente ou via Dock
 - `POST /api/space-weather/ingest`: dispara a ingestão de dados históricos da NASA e publica alertas no RabbitMQ.
 - `GET /api/neo/feed?date=YYYY-MM-DD`: consulta objetos próximos à Terra (endpoint experimental).
 - `GET /health`: retorna status do serviço `ingestor`.
+
 ### Payload do endpoint de ingestão
 
 ```json
 {
-  "startDate": "2026-01-01",
-  "endDate": "2026-01-02"
+  "startDate": "2026-01-03",
+  "endDate": "2026-03-04"
 }
 ```
 
 ## Testes
+
 Para rodar os testes unitários:
 
 ```bash
@@ -143,4 +145,3 @@ solar-shield/
   /docs
     arquitetura.png     # opcional, exportado do Mermaid
 ```
-
