@@ -4,9 +4,9 @@
 
 - Rodrigo Silva Rocha 552857 -> responsável: ingestor + Nginx
 
-- Thiago Luiz Pereira 553720 -> responsável: notifier + idempotencia
+- Felipe Lima Bonato Testa 553780 -> responsável: notifier + idempotencia
 
-- Felipe Lima Bonato Testa 553780 -> responsável: testes + k6 + docker-compose
+- Thiago Luiz Pereira 553720-> responsável: testes + k6 + docker-compose
 
 ## Visão geral
 
